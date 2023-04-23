@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+        integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+        crossorigin="anonymous"></script>
+    <style>
+        #flex {
+            display: flex;
+            border: 1px solid black;
+        }
+        #flex>div:nth-child(1){
+            margin-right: 20px;
+            border: 1px solid gray;
+            padding: 30px;
+        }
+        #flex>div:nth-child(2)>input,button{
+            margin-top: 40px;
+           padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flex">
+        <div id="parent">
+            <div id="roomname"></div>
+            <div id="usersname"></div>
+        </div>
+
+        <div>
+            <div id="messages"></div>
+            <input type="text" name="message" id="inputmsg">
+            <button id="btnmsg">send message</button>
+        </div>
+        <div>
+            <button id="leave">Leave Chat</button>
+        </div>
+    </div>
+
+
+</body>
+<script src="./main.js"></script>
+
+</html>
